@@ -1,0 +1,9 @@
+C:\sivam\Rock\DataAccess_CodeFirst\ROCK_DAL\bin\Debug\ROCK_DAL.dll
+C:\sivam\Rock\DataAccess_CodeFirst\ROCK_DAL\bin\Debug\ROCK_DAL.pdb
+C:\sivam\Rock\DataAccess_CodeFirst\ROCK_DAL\bin\Debug\EntityFramework.dll
+C:\sivam\Rock\DataAccess_CodeFirst\ROCK_DAL\bin\Debug\Rock_Model.dll
+C:\sivam\Rock\DataAccess_CodeFirst\ROCK_DAL\bin\Debug\Rock_Model.pdb
+C:\sivam\Rock\DataAccess_CodeFirst\ROCK_DAL\bin\Debug\EntityFramework.xml
+C:\sivam\Rock\DataAccess_CodeFirst\ROCK_DAL\obj\Debug\ROCK_DAL.csprojResolveAssemblyReference.cache
+C:\sivam\Rock\DataAccess_CodeFirst\ROCK_DAL\obj\Debug\ROCK_DAL.dll
+C:\sivam\Rock\DataAccess_CodeFirst\ROCK_DAL\obj\Debug\ROCK_DAL.pdb

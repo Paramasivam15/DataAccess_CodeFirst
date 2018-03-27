@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_the_recsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="db_the_recsModelStoreContainer">
+    <EntitySet Name="tb_the_comments" EntityType="db_the_recsModel.Store.tb_the_comments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_the_recs" EntityType="db_the_recsModel.Store.tb_the_recs" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_tb_the_comments_tb_the_recs" Association="db_the_recsModel.Store.FK_tb_the_comments_tb_the_recs">
+      <End Role="tb_the_recs" EntitySet="tb_the_recs" />
+      <End Role="tb_the_comments" EntitySet="tb_the_comments" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tb_the_comments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="rec_the_Id" Type="bigint" Nullable="false" />
+    <Property Name="comments" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_the_recs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="rec" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_tb_the_comments_tb_the_recs">
+    <End Role="tb_the_recs" Type="db_the_recsModel.Store.tb_the_recs" Multiplicity="1" />
+    <End Role="tb_the_comments" Type="db_the_recsModel.Store.tb_the_comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_the_recs">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tb_the_comments">
+        <PropertyRef Name="rec_the_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

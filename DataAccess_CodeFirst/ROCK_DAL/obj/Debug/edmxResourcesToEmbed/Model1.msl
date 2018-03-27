@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_the_recsModelStoreContainer" CdmEntityContainer="db_the_recsEntities">
+    <EntitySetMapping Name="tb_the_comments">
+      <EntityTypeMapping TypeName="db_the_recsModel.tb_the_comments">
+        <MappingFragment StoreEntitySet="tb_the_comments">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="rec_the_Id" ColumnName="rec_the_Id" />
+          <ScalarProperty Name="comments" ColumnName="comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_the_recs">
+      <EntityTypeMapping TypeName="db_the_recsModel.tb_the_recs">
+        <MappingFragment StoreEntitySet="tb_the_recs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="rec" ColumnName="rec" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

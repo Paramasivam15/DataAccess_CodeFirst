@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rock_Model", "Rock_Model\Rock_Model.csproj", "{2F763DF6-866F-4CC8-89FC-043E9287A37E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROCK_DAL", "ROCK_DAL\ROCK_DAL.csproj", "{9BA8DF22-80CA-4FBC-ADFF-5A07D5D3719A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console_CodeFirst", "Console_CodeFirst\Console_CodeFirst.csproj", "{C9655F7F-2F72-4E34-B1F1-5EB702571419}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F763DF6-866F-4CC8-89FC-043E9287A37E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F763DF6-866F-4CC8-89FC-043E9287A37E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F763DF6-866F-4CC8-89FC-043E9287A37E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F763DF6-866F-4CC8-89FC-043E9287A37E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA8DF22-80CA-4FBC-ADFF-5A07D5D3719A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA8DF22-80CA-4FBC-ADFF-5A07D5D3719A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA8DF22-80CA-4FBC-ADFF-5A07D5D3719A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA8DF22-80CA-4FBC-ADFF-5A07D5D3719A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9655F7F-2F72-4E34-B1F1-5EB702571419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9655F7F-2F72-4E34-B1F1-5EB702571419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9655F7F-2F72-4E34-B1F1-5EB702571419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9655F7F-2F72-4E34-B1F1-5EB702571419}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_the_recsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="db_the_recsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tb_the_comments" EntityType="db_the_recsModel.tb_the_comments" />
+    <EntitySet Name="tb_the_recs" EntityType="db_the_recsModel.tb_the_recs" />
+    <AssociationSet Name="FK_tb_the_comments_tb_the_recs" Association="db_the_recsModel.FK_tb_the_comments_tb_the_recs">
+      <End Role="tb_the_recs" EntitySet="tb_the_recs" />
+      <End Role="tb_the_comments" EntitySet="tb_the_comments" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tb_the_comments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rec_the_Id" Type="Int64" Nullable="false" />
+    <Property Name="comments" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tb_the_recs" Relationship="db_the_recsModel.FK_tb_the_comments_tb_the_recs" FromRole="tb_the_comments" ToRole="tb_the_recs" />
+  </EntityType>
+  <EntityType Name="tb_the_recs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rec" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tb_the_comments" Relationship="db_the_recsModel.FK_tb_the_comments_tb_the_recs" FromRole="tb_the_recs" ToRole="tb_the_comments" />
+  </EntityType>
+  <Association Name="FK_tb_the_comments_tb_the_recs">
+    <End Role="tb_the_recs" Type="db_the_recsModel.tb_the_recs" Multiplicity="1" />
+    <End Role="tb_the_comments" Type="db_the_recsModel.tb_the_comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_the_recs">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tb_the_comments">
+        <PropertyRef Name="rec_the_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

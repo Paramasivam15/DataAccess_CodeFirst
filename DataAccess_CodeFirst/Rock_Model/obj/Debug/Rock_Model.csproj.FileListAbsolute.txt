@@ -1,0 +1,6 @@
+C:\sivam\Rock\DataAccess_CodeFirst\Rock_Model\bin\Debug\Rock_Model.dll
+C:\sivam\Rock\DataAccess_CodeFirst\Rock_Model\bin\Debug\Rock_Model.pdb
+C:\sivam\Rock\DataAccess_CodeFirst\Rock_Model\bin\Debug\EntityFramework.dll
+C:\sivam\Rock\DataAccess_CodeFirst\Rock_Model\bin\Debug\EntityFramework.xml
+C:\sivam\Rock\DataAccess_CodeFirst\Rock_Model\obj\Debug\Rock_Model.dll
+C:\sivam\Rock\DataAccess_CodeFirst\Rock_Model\obj\Debug\Rock_Model.pdb
